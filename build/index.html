@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+<!--<![endif]-->
+
+<link href="/stylesheets/site.css" rel="stylesheet">
+<link href="/cocoen/css/cocoen.min.css" rel="stylesheet">
+
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114049804-3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114049804-3');
+</script>
+
+<link href="/img/favicon.png" rel="icon" type="image/png" />
+<title>Daniel Wylie</title>
+</head>
+<body class="index">
+
+
+<div class="panel panel--content">
+  <div class="content">
+    <h1>Daniel Wylie</h1>
+
+    <h2>Software developer // Content creator</h2>
+
+    <div class="buttons">
+      <a href="https://overland.nz" target="_blank">Overland NZ</a>
+      <a href="https://instagram.com/dwnz" target="_blank">Instagram</a>
+      <a href="https://hunchbuzz.com" target="_blank">Hunchbuzz</a>
+    </div>
+
+    <div class="links">
+      <a href="javascript:" id="contact">Get in touch</a>
+      <a href="https://www.linkedin.com/in/danielwylienz/" target="_blank">LinkedIn</a>
+      <a href="https://www.github.com/dwnz/" target="_blank">Github</a>
+      <a href="/presets">Presets</a>
+    </div>
+  </div>
+</div>
+<div class="panel panel--photo"></div>
+
+<div class="modal" id="modal">
+  <div class="modal__backing"></div>
+  <div class="modal__body">
+    <form action="https://formspree.io/moqkvwal" method="POST">
+      <label>
+        Name
+        <input type="text" name="name">
+      </label>
+
+      <label>
+        Your email
+        <input type="email" name="_replyto">
+      </label>
+
+      <label>
+        Message
+        <textarea name="message"></textarea>
+      </label>
+
+      <div class="text__right">
+        <a href="javascript:" id="close">Cancel</a>
+        <input type="submit" value="Send">
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $('#contact').click(function () {
+            $('#modal').addClass('modal--in');
+        });
+
+        $('#close').click(function () {
+            $('#modal').removeClass('modal--in');
+        });
+    })
+</script>
+
+
+</body>
+</html>
